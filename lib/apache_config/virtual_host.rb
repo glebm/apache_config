@@ -20,6 +20,6 @@ class VirtualHost
   end
   
   def document_root
-    @config['Documentroot'].content
+    @config['DocumentRoot'].content
   end
 end
