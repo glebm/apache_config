@@ -7,7 +7,7 @@ module Apache
     end
     
     def [] name
-      r = Array(children).select { |child| child.name == name }
+      r = Array(children).select { |child| child.name.downcase == name.downcase }
       case r.size
       when 0
         self << Node.new(name)
